@@ -10,6 +10,6 @@ const job = async () => {
 
 module.exports = createScheduledFunction(
   'cron request',
-  '* 0/1 * * * ? ', 
+  '*/1 * * * *', 
   job 
 )
